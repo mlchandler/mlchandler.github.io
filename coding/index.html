@@ -13,11 +13,6 @@ Some snippets of short and simple miscellaneous MATLAB functions that may be use
   <li>Find all mode values in an array: <a href="multi_modes.m">multi_modes.m</a></li>
 </ul>
 
-
-
-
-
-<pre class="codeinput">
 <span class="comment">%Calculates all the modes of a given matrix A</span>
 
 <span class="comment">%--------------------------------------------------</span>
@@ -31,8 +26,6 @@ U = unique(A); <span class="comment">%find all unique entries in A</span>
 H=histc(A,U); <span class="comment">%frequency count of each unique entry in A</span>
 mm = U(H==max(H)); <span class="comment">%find the unique entries with the highest frequency (modes)</span>
 <span class="keyword">end</span>
-
-
 
 
 <ul>
