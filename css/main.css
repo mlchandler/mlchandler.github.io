@@ -50,7 +50,7 @@ nav li a:hover {
   background-color: #999;
 }
 
-#up_but {
+#up_butn {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -66,6 +66,6 @@ nav li a:hover {
   border-radius: 4px;
 }
 
-#up_but:hover {
+#up_butn:hover {
   background-color: #999;
 }
