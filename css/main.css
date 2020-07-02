@@ -7,7 +7,7 @@ p, ul { font-size: 1em; line-height: 1.4em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
-h2 { font-size: 2em; display:inline; }
+h2 { font-size: 2em; padding: 0px; margin: 0px; }
 
 .center {
   display: block;
