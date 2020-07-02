@@ -45,3 +45,9 @@ nav li a {
 nav li a:hover {
   background-color: #111;
 }
+
+li a.nav_act {
+  color: white;
+  background-color: #333;
+}
+
