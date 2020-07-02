@@ -1,6 +1,6 @@
 body { margin: 60px auto; width: 80%; }
 
-a { text-decoration: none; color: #999; }
+a { text-decoration: none; color: #555; }
 a:hover { text-decoration: underline; }
 
 p, ul { font-size: 1em; line-height: 1.4em; color: #333; }
@@ -27,7 +27,7 @@ nav ul {  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #999;
+  background-color: #555;
 }
 
 nav li {
@@ -44,10 +44,5 @@ nav li a {
 
 nav li a:hover {
   background-color: #111;
-}
-
-li a.nav_act {
-  color: white;
-  background-color: #333;
 }
 
