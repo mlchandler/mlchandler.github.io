@@ -19,7 +19,7 @@ h2 { font-size: 2em; }
   padding: 5%;
 }
 
-footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; color: #999; }
+footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; color: #666; }
 footer ul li { display: inline; margin-right: 20px; }
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 
@@ -42,9 +42,6 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover:not(.nac_act) { }
-
-nav li a.nav_act {
-  color: white;
-  background-color: #000;
+nav li a:hover {
+  background-color: #999;
 }
