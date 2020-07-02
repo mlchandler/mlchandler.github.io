@@ -32,7 +32,9 @@ nav ul {  list-style-type: none;
   padding: 0;
   overflow: hidden;
   background-color: #777;
-  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 nav li {
