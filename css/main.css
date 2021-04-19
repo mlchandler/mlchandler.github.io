@@ -72,7 +72,7 @@ nav li a:hover{
 	background-color: #999;
 	}
 
-navbar a.active {
+navbar li a.active {
   background-color: #328da8;
   color: white;
 }
