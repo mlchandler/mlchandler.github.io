@@ -84,14 +84,24 @@ img.centre-image {	display: block;
 
 
 <!-- Small screen dropdown navbar (hidden on medium and large screens) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
-  <a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
-  <a href="#twitter_posters" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Twitter Posters</a>
-  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ACADEMIC GALLERY</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card">
+		<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-left w3-xlarge" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right w3-xlarge" ><i class="fa fa-home"></i></a>
+		<a href="https://scholar.google.com/citations?user=w3B4oXkAAAAJ&hl=en" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right w3-xlarge" ><i class="material-icons w3-xlarge">school</i></a>
+		<a href="https://twitter.com/nz_mitch_" class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right w3-xlarge" ><i class="fa fa-twitter"></i></a>    
+		
+		<div id="navSmall" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+			<a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+			<a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Education</a>
+			<a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publications</a>
+			<a href="#twitter_posters" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Twitter Posters</a>
+			<a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Academic Gallery</a>
+		</div>
+		
+	</div>
 </div>
+
 
 
 <!-- Page Content -->
@@ -102,7 +112,7 @@ img.centre-image {	display: block;
 	<h1 class="w3-jumbo">Mitchell Chandler</h1>
 	<p>mlchandler at ucsd dot edu</p>	
 	<img src="/images/MC_header.jpg" class="centre-image w3-hide-small" width="50%">
-
+	<img src="/images/MC_header.jpg" class="w3-hide-medium w3-hide-large" width="90%">
 </header>
 
 
@@ -243,6 +253,31 @@ I have taken to making Twitter Posters as a way of quickly and simply communicat
 
 <!-- END PAGE CONTENT -->
 </div>
+
+
+
+<!-- Scripts to make the small-screen drop down work -->
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navSmall");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
 
 </body>
 </html>
