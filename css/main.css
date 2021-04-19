@@ -72,10 +72,6 @@ nav li a:hover{
 	background-color: #999;
 	}
 
-nav li a.active {
-  background-color: #328da8;
-  color: white;
-}
 
 footer ul{ 
 	font-size: 1em; 
